@@ -2,12 +2,12 @@ package tsm3ecasestudy;
 
 public class Person 
 {
-    private String name;
-    private String gender;
-    private int empID;
-    private int numD;
+    	private String name;
+    	private String gender;
 	private String address;
 	private String work;
+	private int empID;
+    	private int numD;
 	private int empSalary;
 	private int OT;
   
