@@ -13,9 +13,10 @@ public class Person
 	private int OTAmount;
   	private int tax;
 	private int TSalary;
+	private int TSalaryTax;
 
-  //Method 1: Trisha Mae Mallari
-     public void getName(String name)
+    //Method 1: Trisha Mae Mallari
+    public void getName(String name)
     {
         this.name = name;
     }
@@ -36,8 +37,9 @@ public class Person
         return gender;
 		
     }
-	//Method  3: Angel Adriano
-     public void getAdress(String address)
+
+    //Method  3: Angel Adriano
+    public void getAdress(String address)
     {
         this.address = address;
     }
@@ -57,7 +59,8 @@ public class Person
     {
         return work;
     }
-//Method 5: Aryan Erieneil Aquino
+    
+    //Method 5: Aryan Erieneil Aquino
     public void getEmpId(int empID)
     {
         this.empID = empID;
@@ -79,7 +82,7 @@ public class Person
         return numD;
     }
 
-//Method 7: Jeremiah Barcelona
+    //Method 7: Jeremiah Barcelona
     public void getEmpSalary(int empSalary)
     {
         this.empSalary = empSalary;
@@ -101,7 +104,7 @@ public class Person
         return OT;
     }
 
-//Method 9: Ma. Rosalyn Garbida
+    //Method 9: Ma. Rosalyn Garbida
     public void getOTAmount(int OTAmount)
     {
         this.OTAmount = OTAmount;
@@ -122,14 +125,25 @@ public class Person
     {
         return tax;
     }
-//Method 11:
+    
+    //Method 11:
     public int TSalary()
     {
        int TotalSalary = (empSalary* 10)+OTAmount;
        return TotalSalary;
     }
+
+    //Method 12: Adrian Gacusan
+    public int TSalaryTax()
+    {
+       int SalaryTax = (empSalary*10 + OTAmount) -tax;
+       return SalaryTax;
+    }
+
     public void result ()
-   {
-       System.out.println("The Total Salary is: " + TSalary()); }
+    {
+       System.out.println("The Total Salary is: " + TSalary());
+       System.out.println("The Total Salary After Tax is: " + TSalaryTax()); 
+    }
 
 }
