@@ -4,6 +4,8 @@ public class Person
 {
     private String name;
     private String gender;
+    private int empID;
+    private int numD;
 	private String address;
 	private String work;
   
@@ -49,5 +51,26 @@ public class Person
     public String showWork()
     {
         return work;
+    }
+//Method 5: Aryan Erieneil Aquino
+    public void getEmpId(int empID)
+    {
+        this.empID = empID;
+    }
+    
+    public int showEmpID()
+    {
+        return empID;
+    }
+    
+    //Method 6: Aryan Erieneil Aquino
+    public void getNumofD(int numD)
+    {
+        this.numD = numD;
+    }
+    
+    public int showNumofD()
+    {
+        return numD;
     }
 }
